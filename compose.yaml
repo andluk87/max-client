@@ -1,6 +1,9 @@
 services:
   build-windows:
     platform: linux/amd64
-    build: .
+    build:
+      context: .
+      network: host
+    network_mode: host
     volumes:
       - ./dist:/project/dist
