@@ -1,0 +1,6 @@
+services:
+  build-windows:
+    platform: linux/amd64
+    build: .
+    volumes:
+      - ./dist:/project/dist
